@@ -11,7 +11,7 @@
 }
 
 .speechBubbleContainer::after {
-  content: '';
+  content: "";
   position: absolute;
   border-style: solid;
   display: block;
@@ -28,7 +28,7 @@
 
 .speechBubbleWrapper {
   padding: 30px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;

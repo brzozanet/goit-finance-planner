@@ -5,23 +5,27 @@ import { useDispatch } from "react-redux";
 import useExpenses from "../../hooks/useExpenses";
 
 // REDUX ACTIONS:
-import { getExpenseStats, setNewExpense, deleteExpense } from "../../redux/expenses/operations";
+import {
+  getExpenseStats,
+  setNewExpense,
+  deleteExpense,
+} from "../../redux/expenses/operations";
 
 // COMPONENTS:
 import ExpensesIncomeForm from "../ExpensesIncomeForm/ExpensesIncomeForm";
 import TableExpenses from "../Table/TableExpenses";
 import ExpensesIncomeSummary from "../ExpensesIncomeSummary/ExpensesIncomeSummary";
 // CSS
-import css from "./Expenses.module.css"
+import css from "./Expenses.module.css";
 
 const Expenses = () => {
   const { expensesMonthStats } = useExpenses();
 
-  const dispatch = useDispatch()
+  const dispatch = useDispatch();
 
   useEffect(() => {
-    dispatch(getExpenseStats())
-  }, [dispatch])
+    dispatch(getExpenseStats());
+  }, [dispatch]);
   return (
     <div className={css.expensesIncomeContainer}>
       <ExpensesIncomeForm callback={setNewExpense} actionType="expense" />
@@ -30,8 +34,7 @@ const Expenses = () => {
         <ExpensesIncomeSummary expensesMonthStats={expensesMonthStats} />
       </div>
     </div>
-
   );
-}
+};
 
 export default Expenses;

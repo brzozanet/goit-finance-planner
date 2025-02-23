@@ -17,11 +17,13 @@ import CategoryList from "../../components/CategoryList/CategoryList";
 import BarChart from "../../components/Chart/BarChart";
 import ReturnMainpage from "../../components/ReturnMainPage/ReturnMainPage";
 
-
 const ReportsPage = () => {
   const [currentPeriod, setCurrentPeriod] = useState(() => {
     const now = new Date();
-    return `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, "0")}`;
+    return `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(
+      2,
+      "0"
+    )}`;
   });
   const dispatch = useDispatch();
 
@@ -40,13 +42,19 @@ const ReportsPage = () => {
       <div className="reports-header">
         <ReturnMainpage />
         <Balance />
-        <CurrentPeriod currentPeriod={currentPeriod} setCurrentPeriod={setCurrentPeriod} />
+        <CurrentPeriod
+          currentPeriod={currentPeriod}
+          setCurrentPeriod={setCurrentPeriod}
+        />
       </div>
       <div className="reports-content">
         <BalanceLabel />
         <div className="category-section">
           <div className="category-wrapper">
-            <ReportsCategoriesNav currentView={currentView} toggleView={toggleView} />
+            <ReportsCategoriesNav
+              currentView={currentView}
+              toggleView={toggleView}
+            />
             <CategoryList currentView={currentView} />
           </div>
         </div>

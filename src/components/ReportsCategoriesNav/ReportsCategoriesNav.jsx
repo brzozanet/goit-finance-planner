@@ -6,11 +6,19 @@ import styles from "./ReportsCategoriesNav.module.css";
 const ReportsCategoriesNav = ({ currentView, toggleView }) => {
   return (
     <div className={styles.reportsCategoriesNavContainer}>
-      <button className={styles.reportsCategoriesNavNextButton} onClick={toggleView}>
+      <button
+        className={styles.reportsCategoriesNavNextButton}
+        onClick={toggleView}
+      >
         <img src={arrowLeft} alt="Previous" />
       </button>
-      <p className={styles.reportsCategoriesNavView}>{currentView === "expenses" ? "Expenses" : "Income"}</p>
-      <button className={styles.reportsCategoriesNavNextButton} onClick={toggleView}>
+      <p className={styles.reportsCategoriesNavView}>
+        {currentView === "expenses" ? "Expenses" : "Income"}
+      </p>
+      <button
+        className={styles.reportsCategoriesNavNextButton}
+        onClick={toggleView}
+      >
         <img src={arrowRight} alt="Next" />
       </button>
     </div>

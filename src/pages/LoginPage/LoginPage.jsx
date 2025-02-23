@@ -3,9 +3,7 @@ import { ReactComponent as LogoSVG } from "../../assets/Logo.svg";
 import { ReactComponent as BackgroundImage } from "../../assets/Background.svg";
 import { ReactComponent as PairKapusta } from "../../assets/SmallBackground.svg";
 import { ReactComponent as SingleKapusta } from "../../assets/singleKapusta.svg";
-
-//CSS
-import css from "./LoginPage.module.css"
+import css from "./LoginPage.module.css";
 
 const LoginPage = () => {
   return (

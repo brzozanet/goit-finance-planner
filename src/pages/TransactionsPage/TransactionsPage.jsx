@@ -18,6 +18,6 @@ const TransactionsPage = () => {
       <Outlet />
     </div>
   );
-}
+};
 
-export default TransactionsPage; 
+export default TransactionsPage;

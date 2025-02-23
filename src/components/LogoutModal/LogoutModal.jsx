@@ -17,7 +17,10 @@ const LogoutModal = ({ modalText, isOpen, toggleModal }) => {
         <div className={styles.logoutModalWrapper}>
           <p className={styles.logoutModalText}>{modalText}</p>
           <div className={styles.logoutModalButtonContainer}>
-            <button className={styles.logoutModalButton} onClick={handleUserLogout}>
+            <button
+              className={styles.logoutModalButton}
+              onClick={handleUserLogout}
+            >
               <span className={styles.logoutModalButtonText}>Yes</span>
             </button>
             <button className={styles.logoutModalButton} onClick={toggleModal}>

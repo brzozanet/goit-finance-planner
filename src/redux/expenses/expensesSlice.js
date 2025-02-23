@@ -5,7 +5,7 @@ import { getExpenseStats } from "./operations";
 const initialState = {
   loadingExpenses: false,
   userExpenses: [],
-  monthStats: {}
+  monthStats: {},
 };
 
 const expensesSlice = createSlice({
@@ -24,9 +24,9 @@ const expensesSlice = createSlice({
       })
       .addCase(getExpenseStats.rejected, (state) => {
         state.loadingExpenses = false;
-      })
-      // ======================================================== 
-  }
+      });
+    // ========================================================
+  },
 });
 
 export const expensesReducer = expensesSlice.reducer;

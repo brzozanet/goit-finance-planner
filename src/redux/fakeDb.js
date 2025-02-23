@@ -3,7 +3,7 @@ export const user = {
   email: "zenio@mail.com",
   balance: 5000,
   firstLogin: true,
-}
+};
 
 export const loginResponse = {
   accessToken: "secret-token-mada-faka",
@@ -28,11 +28,9 @@ export const loginResponse = {
         amount: 50,
         date: "2024-05-26",
       },
-
-    ]
-  }
+    ],
+  },
 };
-
 
 export const expenseStats = {
   userExpenses: [
@@ -70,7 +68,7 @@ export const expenseStats = {
       category: "Education",
       amount: 1200,
       date: "2024-05-26",
-    }
+    },
   ],
   monthStats: {
     January: "150",
@@ -84,7 +82,7 @@ export const expenseStats = {
     October: "5000",
     November: "200",
     December: "100",
-  }
+  },
 };
 
 export const newExpense = {
@@ -95,8 +93,8 @@ export const newExpense = {
     category: "Products",
     amount: 200,
     date: "2024-05-28",
-  }
-}
+  },
+};
 
 export const getNewBalance = { newBalance: 10000 };
 
@@ -117,7 +115,7 @@ export const incomeStats = {
       category: "Salary",
       amount: 800,
       date: "2024-05-18",
-    }
+    },
   ],
   monthStats: {
     January: "2500",
@@ -131,7 +129,7 @@ export const incomeStats = {
     October: "8700",
     November: "4900",
     December: "100",
-  }
+  },
 };
 
 export const newIncome = {
@@ -142,7 +140,7 @@ export const newIncome = {
     category: "Salary",
     amount: 3500,
     date: "2024-05-19",
-  }
+  },
 };
 
 export const transactionsData = {
@@ -150,8 +148,8 @@ export const transactionsData = {
     total: 6000,
     incomesData: {
       salary: 5000,
-      bonus: 1000
-    }
+      bonus: 1000,
+    },
   },
   expenses: {
     total: 5200,
@@ -159,15 +157,15 @@ export const transactionsData = {
       products: {
         total: 2000,
         dinner: 700,
-        something: 1300
+        something: 1300,
       },
       alcohol: {
         total: 3200,
         drinks: 2200,
-        beer: 1000
-      }
-    }
-  }
-}
+        beer: 1000,
+      },
+    },
+  },
+};
 
 export const removeIncome = { newBalance: 7300 };

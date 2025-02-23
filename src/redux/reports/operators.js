@@ -8,11 +8,11 @@ const getTransactionsData = createAsyncThunk(
     try {
       const res = transactionsData;
       // console.log(res);
-      return res
+      return res;
     } catch (error) {
       return thunkAPI.rejectWithValue(error.message);
     }
   }
 );
 
-export {getTransactionsData}
+export { getTransactionsData };

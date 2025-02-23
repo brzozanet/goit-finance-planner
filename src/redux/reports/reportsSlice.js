@@ -5,7 +5,7 @@ import { getTransactionsData } from "./operators";
 const initialState = {
   loadingReports: false,
   incomes: {},
-  expenses: {}
+  expenses: {},
 };
 
 const reportsSlice = createSlice({
@@ -23,8 +23,8 @@ const reportsSlice = createSlice({
       })
       .addCase(getTransactionsData.rejected, (state) => {
         state.loadingReports = false;
-      })
-  }
+      });
+  },
 });
 
 export const reportsReducer = reportsSlice.reducer;

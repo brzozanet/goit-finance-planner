@@ -1,4 +1,4 @@
-@import '../../styles/vars.css';
+@import "../../styles/vars.css";
 
 .BalanceForm {
   align-items: center;
@@ -6,7 +6,6 @@
   flex-direction: row;
   gap: 16px;
   justify-content: center;
-
 }
 
 .BalanceLabel {
@@ -53,7 +52,7 @@
 
 .wrapper {
   display: flex;
-  gap: 16px
+  gap: 16px;
 }
 
 @media screen and (max-width: 576px) {
@@ -73,5 +72,4 @@
   .wrapper {
     gap: 0;
   }
-
 }

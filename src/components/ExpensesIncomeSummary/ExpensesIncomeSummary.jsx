@@ -3,7 +3,7 @@ import useExpenses from "../../hooks/useExpenses";
 import useIncomes from "../../hooks/useIncomes";
 import { useLocation } from "react-router-dom";
 import { isBefore, parse } from "date-fns";
-import styles from './ExpensesIncomeSummary.module.css';
+import styles from "./ExpensesIncomeSummary.module.css";
 
 const ExpensesIncomeSummary = () => {
   const location = useLocation();
@@ -35,7 +35,7 @@ const ExpensesIncomeSummary = () => {
         value: value,
       }));
   }
-  
+
   return (
     <div className={styles.SummaryBox}>
       <div className={styles.SummaryTitle}>Summary</div>

@@ -7,7 +7,11 @@ const ReportsNav = () => {
   return (
     <Link to="/reports" className={styles.reportsNavLink}>
       <p className={styles.reportsNavText}>Reports</p>
-      <img src={reportsLogo} alt="Reports Icon" className={styles.reportsNavIcon} />
+      <img
+        src={reportsLogo}
+        alt="Reports Icon"
+        className={styles.reportsNavIcon}
+      />
     </Link>
   );
 };

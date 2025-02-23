@@ -55,16 +55,16 @@
 }
 
 @media screen and (max-width: 768px) {
-  .CategoryContainer {}
+  .CategoryContainer {
+  }
 }
 
 @media screen and (max-width: 576px) {
-
   .CategoryWrapper {
     max-width: 75px;
   }
 
   .CategoryContainer {
-    border-bottom: 1px solid var(--border-category)
+    border-bottom: 1px solid var(--border-category);
   }
 }

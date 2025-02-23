@@ -1,9 +1,9 @@
 const ToggleTheme = () => {
-  return ( 
+  return (
     <>
       <button>Toggle theme</button>
     </>
-   );
-}
- 
+  );
+};
+
 export default ToggleTheme;

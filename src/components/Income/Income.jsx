@@ -1,10 +1,6 @@
 import { useEffect } from "react";
 import { useDispatch } from "react-redux";
-
-//CSS
-import css from "../Expenses/Expenses.module.css"
-
-// REDUX HOOKS:
+import css from "../Expenses/Expenses.module.css";
 import useIncomes from "../../hooks/useIncomes";
 
 // REDUX ACTIONS:

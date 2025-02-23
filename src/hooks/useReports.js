@@ -1,5 +1,9 @@
 import { useSelector } from "react-redux";
-import { selectIncomesReport, selectExpensesReport, selectLoading } from "../redux/reports/selectors";
+import {
+  selectIncomesReport,
+  selectExpensesReport,
+  selectLoading,
+} from "../redux/reports/selectors";
 
 const useReports = () => {
   const incomesReport = useSelector(selectIncomesReport);
@@ -9,7 +13,7 @@ const useReports = () => {
   return {
     incomesReport,
     expensesReport,
-    loadingReports
+    loadingReports,
   };
 };
 

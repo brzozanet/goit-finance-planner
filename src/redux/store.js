@@ -10,7 +10,7 @@ const store = configureStore({
     user: userReducer,
     expenses: expensesReducer,
     incomes: incomesReducer,
-    reports: reportsReducer
+    reports: reportsReducer,
   },
 });
 

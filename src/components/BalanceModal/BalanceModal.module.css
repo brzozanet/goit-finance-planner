@@ -1,4 +1,4 @@
-@import '../../styles/vars.css';
+@import "../../styles/vars.css";
 
 .Backdrop {
   height: 100%;
@@ -27,7 +27,7 @@
   border-bottom: 16px solid #1d346a;
   border-left: 16px solid transparent;
   border-right: 16px solid transparent;
-  content: '';
+  content: "";
   height: 0;
   left: 20%;
   position: absolute;

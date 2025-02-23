@@ -2,9 +2,7 @@ import { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { getTransactionsData } from "../../redux/reports/operators";
 import useReports from "../../hooks/useReports";
-
-//CSS
-import css from "./BalanceLabel.module.css"
+import css from "./BalanceLabel.module.css";
 
 const BalanceLabel = () => {
   const { incomesReport, expensesReport } = useReports();
@@ -31,7 +29,9 @@ const BalanceLabel = () => {
         <p className={css.BalanceLabelParagraph}>
           Income:{" "}
           <span>
-            <span className={css.BalanceLabelSpanGreen}>+ {incomesReport.total}</span>
+            <span className={css.BalanceLabelSpanGreen}>
+              + {incomesReport.total}
+            </span>
             <span> USD</span>
           </span>
         </p>

@@ -2,9 +2,7 @@ import { ReactComponent as GoogleIcon } from "../../assets/Google.svg";
 import { useState } from "react";
 import { useDispatch } from "react-redux";
 import { login, register } from "../../redux/user/operations";
-
-//CSS
-import css from "./LoginForm.module.css"
+import css from "./LoginForm.module.css";
 
 const LoginForm = () => {
   const dispatch = useDispatch();
@@ -78,7 +76,8 @@ const LoginForm = () => {
         </p>
         <form className={css.Form}>
           <div className={css.InputContainer}>
-            <label className={css.Label}
+            <label
+              className={css.Label}
               required
               // formSubmitted={formSubmitted}
               value={formData.email}
@@ -90,18 +89,22 @@ const LoginForm = () => {
               )}
               Email
             </label>
-            <input className={css.InputField}
+            <input
+              className={css.InputField}
               type="text"
               name="email"
               value={formData.email}
               onChange={handleChange}
               placeholder="your@email.com"
             />
-            {errors.email && <span className={css.InputValidation}>{errors.email}</span>}
+            {errors.email && (
+              <span className={css.InputValidation}>{errors.email}</span>
+            )}
           </div>
 
           <div className={css.InputContainer}>
-            <label className={css.Label}
+            <label
+              className={css.Label}
               required
               // formSubmitted={formSubmitted}
               value={formData.password}
@@ -114,7 +117,8 @@ const LoginForm = () => {
               Password
             </label>
 
-            <input className={css.InputField}
+            <input
+              className={css.InputField}
               type="password"
               name="password"
               value={formData.password}
@@ -130,7 +134,11 @@ const LoginForm = () => {
             <button className={css.ButtonLogin} type="submit" onClick={onLogin}>
               Log in
             </button>
-            <button className={css.ButtonSignup} type="submit" onClick={onSignup}>
+            <button
+              className={css.ButtonSignup}
+              type="submit"
+              onClick={onSignup}
+            >
               Registration
             </button>
           </div>

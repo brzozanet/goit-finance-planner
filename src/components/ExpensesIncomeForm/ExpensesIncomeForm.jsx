@@ -1,11 +1,8 @@
 import { useState, useEffect } from "react";
 import { useDispatch } from "react-redux";
 import CreateDatePicker from "../DatePickerForm/DatePicker";
-
 import Select from "react-select";
-
 import styles from "./ExpensesIncomeForm.module.css";
-
 import calculator from "../../assets/calculator.svg";
 
 const ExpensesIncomeForm = ({ callback, actionType, categories }) => {
@@ -26,7 +23,7 @@ const ExpensesIncomeForm = ({ callback, actionType, categories }) => {
   const handleFormSubmit = (e) => {
     e.preventDefault();
 
-    if (!date || !description  || !amount) {
+    if (!date || !description || !amount) {
       alert("Please fill out all required fields.");
       return;
     }

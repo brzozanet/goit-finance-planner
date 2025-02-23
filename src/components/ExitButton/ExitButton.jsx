@@ -20,7 +20,11 @@ const ExitButton = () => {
         <img src={logoutIcon} alt="Logout Icon" />
       </button>
 
-      <LogoutModal modalText="Are you sure?" isOpen={isModalOpen} toggleModal={toggleModal} />
+      <LogoutModal
+        modalText="Are you sure?"
+        isOpen={isModalOpen}
+        toggleModal={toggleModal}
+      />
     </>
   );
 };

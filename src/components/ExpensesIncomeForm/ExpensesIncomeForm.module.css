@@ -155,7 +155,7 @@
     flex-direction: column;
   }
 
-  .wrapper> :first-child {
+  .wrapper > :first-child {
     display: none;
   }
 

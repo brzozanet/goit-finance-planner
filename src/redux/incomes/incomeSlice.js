@@ -5,7 +5,7 @@ import { getIncomeStats } from "./operations";
 const initialState = {
   loadingIncomes: false,
   userIncomes: [],
-  monthStats: {}
+  monthStats: {},
 };
 
 const incomeSlice = createSlice({
@@ -24,9 +24,9 @@ const incomeSlice = createSlice({
       })
       .addCase(getIncomeStats.rejected, (state) => {
         state.loadingIncomes = false;
-      })
-      // ========================================================
-  }
+      });
+    // ========================================================
+  },
 });
 
 export const incomesReducer = incomeSlice.reducer;
